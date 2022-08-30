@@ -10,4 +10,4 @@ SOME OBSERVATIONS:
 APP:
 
 - Covered all mandatory features.. didn't have time to implement some of the optionals;
-- Latest APK is available [here](https://github.com/pedrotlf/MazeTVApp/blob/master/distribution/app-debug.apk)
+- Latest APK (debug only) is available [here](https://github.com/pedrotlf/MazeTVApp/blob/master/distribution/app-debug.apk)

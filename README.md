@@ -9,5 +9,5 @@ SOME OBSERVATIONS:
 
 APP:
 
-- Covered all mandatory features.. didn't have time to implement some of the optionals;
+- Covered all mandatory features.. didn't have time to implement some of the optionals. Unfortunately I could only start the implementations on Sunday evening. But still I tried my best!! :)
 - Latest APK (debug only) is available [here](https://github.com/pedrotlf/MazeTVApp/blob/master/distribution/app-debug.apk)

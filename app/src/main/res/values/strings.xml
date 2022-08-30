@@ -7,7 +7,7 @@
 
     <string name="maze_show_list_empty_msg">No results found</string>
 
-    <string name="maze_show_details_air_time">Air time:</string>
+    <string name="maze_show_details_air_time">Air days:</string>
     <string name="maze_show_details_episodes">Episodes</string>
     <string name="maze_show_details_episode_number_text">Episode %1$d</string>
     <string name="maze_show_details_season_number_text">Season %1$d</string>

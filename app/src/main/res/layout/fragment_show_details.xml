@@ -47,6 +47,7 @@
                         tools:text="Comedy, Action, Fantasy" />
 
                     <TextView
+                        android:visibility="invisible"
                         android:id="@+id/tv_show_details_air_time"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -60,15 +61,16 @@
 
                     <TextView
                         android:id="@+id/tv_show_details_air_time_text"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="4dp"
                         android:textColor="@color/gray_light"
                         android:textSize="18sp"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@id/tv_show_details_air_time"
                         app:layout_constraintTop_toTopOf="@id/tv_show_details_air_time"
-                        app:layout_constraintBottom_toBottomOf="@id/tv_show_details_air_time"
-                        tools:text="11:00"/>
+                        tools:text="11:00" />
 
                     <TextView
                         android:id="@+id/tv_show_details_summary"
@@ -78,7 +80,7 @@
                         android:textColor="@color/gray_light"
                         android:textSize="18sp"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/tv_show_details_air_time"
+                        app:layout_constraintTop_toBottomOf="@id/tv_show_details_air_time_text"
                         tools:text="Under the Dome is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away." />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.home.HomeFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_shows_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_maze_show"/>
+
+    <ProgressBar
+        android:id="@+id/pb_list_loading_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@id/rv_shows_list"
+        app:layout_constraintEnd_toEndOf="@id/rv_shows_list"
+        app:layout_constraintStart_toStartOf="@id/rv_shows_list"
+        app:layout_constraintTop_toTopOf="@id/rv_shows_list" />
+
+    <TextView
+        tools:visibility="gone"
+        android:id="@+id/tv_list_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maze_show_list_empty_msg"
+        android:textSize="32sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@id/rv_shows_list"
+        app:layout_constraintEnd_toEndOf="@id/rv_shows_list"
+        app:layout_constraintStart_toStartOf="@id/rv_shows_list"
+        app:layout_constraintTop_toTopOf="@id/rv_shows_list" />
+
+    <TextView
+        tools:visibility="visible"
+        android:id="@+id/tv_list_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maze_show_list_error_msg"
+        android:textSize="24sp"
+        android:layout_marginHorizontal="32dp"
+        android:gravity="center_horizontal"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@id/rv_shows_list"
+        app:layout_constraintEnd_toEndOf="@id/rv_shows_list"
+        app:layout_constraintStart_toStartOf="@id/rv_shows_list"
+        app:layout_constraintTop_toTopOf="@id/rv_shows_list" />
+
+    <Button
+        tools:visibility="visible"
+        android:id="@+id/btn_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maze_show_list_error_btn"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_list_error"
+        app:layout_constraintEnd_toEndOf="@id/rv_shows_list"
+        app:layout_constraintStart_toStartOf="@id/rv_shows_list" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

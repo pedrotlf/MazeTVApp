@@ -1,5 +1,5 @@
 # MazeTVApp
-Jobsity challange
+Jobsity challange: consuming [TVmaze API](https://www.tvmaze.com/api)
 
 SOME OBSERVATIONS:
 

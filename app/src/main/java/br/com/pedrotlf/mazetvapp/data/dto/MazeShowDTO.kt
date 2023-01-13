@@ -1,5 +1,6 @@
 package br.com.pedrotlf.mazetvapp.data.dto
 
+import br.com.pedrotlf.mazetvapp.domain.model.MazeShow
 import java.util.*
 
 data class MazeShowDTO(
@@ -28,6 +29,18 @@ data class MazeShowDTO(
     val updated: Long?,
     val _links: MazeLinks?
 )
+
+fun MazeShowDTO.toMazeShow(): MazeShow {
+    return MazeShow(
+        id = id ?: 0,
+        name = name.orEmpty(),
+        posterImage = image?.original ?: image?.medium,
+        airDays = schedule?.days.orEmpty(),
+        airTime = schedule?.time.orEmpty(),
+        genres = genres.orEmpty(),
+        summary = summary.orEmpty()
+    )
+}
 
 data class MazeShowFromSearchDTO(
     val score: Double?,

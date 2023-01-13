@@ -1,7 +1,7 @@
 package br.com.pedrotlf.mazetvapp.domain.use_case
 
 import br.com.pedrotlf.mazetvapp.domain.model.MazeEpisode
-import br.com.pedrotlf.mazetvapp.domain.model.toMazeEpisode
+import br.com.pedrotlf.mazetvapp.data.dto.toMazeEpisode
 import br.com.pedrotlf.mazetvapp.domain.repository.MazeRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

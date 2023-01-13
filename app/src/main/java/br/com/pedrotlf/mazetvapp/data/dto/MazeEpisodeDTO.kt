@@ -1,5 +1,6 @@
 package br.com.pedrotlf.mazetvapp.data.dto
 
+import br.com.pedrotlf.mazetvapp.domain.model.MazeEpisode
 import java.util.*
 
 data class MazeEpisodeDTO(
@@ -17,3 +18,14 @@ data class MazeEpisodeDTO(
     val summary: String?,
     val _links: MazeLinks?
 )
+
+fun MazeEpisodeDTO.toMazeEpisode(): MazeEpisode {
+    return MazeEpisode(
+        id = id ?: 0,
+        name = name.orEmpty(),
+        season = season ?: 0,
+        summary = summary.orEmpty(),
+        image = image?.medium ?: image?.original,
+        number = number ?: 0
+    )
+}
